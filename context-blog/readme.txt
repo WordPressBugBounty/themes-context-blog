@@ -31,6 +31,9 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+= 1.1.7  oct 27 2024
+* Gallery thumb nail img bug fixed, bug post shown on thumb and main also solved
+
 = 1.1.6  oct 6 2024
 * header logo with bug fixed
 

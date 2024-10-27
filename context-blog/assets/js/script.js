@@ -216,8 +216,6 @@ jQuery(document).ready(
             jQuery(changeclass).css('display', 'block');
         }
 
-
-
         // Maintaine equal height of all that posts which do not have image as equal to standard one that has image in full-screen slider.
         matchHeight('.full-blog .slick-slide .item .caption', '.full-blog .slick-slide .item');
 
