@@ -47,7 +47,7 @@
 			get_theme_mod( 'context_blog_logo_location_top', 1 ) == 0 &&
 			get_theme_mod( 'context_blog_topsite_title_location', 0 ) == 0 &&
 			get_theme_mod( 'context_blog_header_social_enable', 1 ) == 0 &&
-			get_theme_mod( 'context_blog_sidepanel_enable', 1 ) == 0
+			get_theme_mod( 'context_blog_sidepanel_enable', 1 ) == 0 && ( is_home() or is_front_page() )
 		): echo 'd-none'; endif; ?>" >
 			<div class="container">
 				<?php

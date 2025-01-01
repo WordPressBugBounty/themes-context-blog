@@ -65,9 +65,9 @@
 		);
 		?>
 	<?php endif; ?>
-	<div class="category-tag">
+	<div class="category-tag d-block mt-2 mb-2">
 		<?php
-		the_tags( '<ul><li>', '</li><li>', '</li></ul>' );
+		the_tags( '<ul class="m-auto"><li>', '</li><li>', '</li></ul>' );
 		?>
 	</div>
 	<div class="comments-form"> 

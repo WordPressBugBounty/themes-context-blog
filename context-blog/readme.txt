@@ -31,6 +31,10 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+= 1.1.8 jan 1 2024
+* site title in single page displayed with all options disable, footer logo height restriction removed,
+tag width in single page removed
+
 = 1.1.7  oct 27 2024
 * Gallery thumb nail img bug fixed, bug post shown on thumb and main also solved
 
