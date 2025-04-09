@@ -23,7 +23,7 @@ function context_blog_home_gallery_slider_enable() {
 					<div class="col-lg-8">
 						<div class="blog-slider-main" data-aos="fade-left">
 							<?php
-							$args['posts_per_page']      = absint( get_theme_mod( 'context_blog_gallery_slider_number_of_display' ) );
+							$args['posts_per_page']      = absint( get_theme_mod( 'context_blog_gallery_slider_number_of_display',4 ) );
 							$args['ignore_sticky_posts'] = 1;
 							$args['cat']       = esc_attr( get_theme_mod( 'context_blog_gallery_slider_category_name',0 ) ) ;
 							$args['orderby']             = array(

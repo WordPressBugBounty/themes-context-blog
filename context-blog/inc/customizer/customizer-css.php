@@ -142,7 +142,12 @@ function context_blog_color_font_css() {
 			.inside-page.search .main-blog-body .blog-snippet .blog-content,
 			.inside-page.search aside > div,
 			.pagination .page-numbers,
-			#masthead
+			.left-float-post,
+			.right-float-post,
+			#masthead,
+			.left-news-slider-blog,
+			.right-news-slider-blog,
+			.center-news-slider-blog
 			{
 				background-color:' . esc_attr( $main_background_color ) . ';
 			}

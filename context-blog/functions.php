@@ -324,10 +324,12 @@ function context_blog_catname_replaced() {
 	$customizer_setting4 = 'context_blog_sidebar_fullwidth_category_name';
 	$customizer_setting5 = 'context_blog_footer_news1_category_name';
 	$customizer_setting6 = 'context_blog_footer_news2_category_name';
+	$customizer_setting7 = 'context_blog_grid_column_category_name';
+	$customizer_setting8 = 'context_blog_sticky_slide_category_name';
 
-	$customizer_settings = array($customizer_setting1,$customizer_setting2,$customizer_setting3,$customizer_setting4,$customizer_setting5,$customizer_setting6);
+	$customizer_settings = array($customizer_setting1,$customizer_setting2,$customizer_setting3,$customizer_setting4,$customizer_setting5,$customizer_setting6,$customizer_setting7,$customizer_setting8);
 
-	for ($a = 0; $a < 6; $a++) {
+	for ($a = 0; $a < 8; $a++) {
 		if (  ! is_numeric( get_theme_mod($customizer_settings[$a],0) ) ) {
 			$categories = get_categories();
 			$value_to_check = get_theme_mod( $customizer_settings[$a],0 );

@@ -4,7 +4,7 @@ Contributors: postmagthemes
 Tags: blog, entertainment, one-column, two-columns, left-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, theme-options, threaded-comments
 
 Requires at least: 4.5
-Tested up to: 6.5
+Tested up to: 6.7.2
 Stable tag: 1.0.0
 Requires PHP: 5.6
 
@@ -31,9 +31,12 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
-= 1.1.8 jan 1 2024
+= 1.1.9 april 9 2025
+tested up to 6.7.2. some changes for new newsmag context blog.
+
+= 1.1.8 jan 1 2025
 * site title in single page displayed with all options disable, footer logo height restriction removed,
-tag width in single page removed
+tag width in single page removed. some changes for new newsmag context blog.
 
 = 1.1.7  oct 27 2024
 * Gallery thumb nail img bug fixed, bug post shown on thumb and main also solved
