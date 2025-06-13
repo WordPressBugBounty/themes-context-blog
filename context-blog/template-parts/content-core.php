@@ -174,10 +174,6 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 			?> <div class="blog-content no_image"> <?php
 		endif;
 
-		if ($section == 6 ||  $section == 7) : ?>
-			<p class="count-news"><?php echo esc_html($context_blog_count_post)?></p>
-		<?php endif;
-
 		if ( $category == 1 ) : ?>
 			<div class="category-tag">
 				<?php
@@ -185,10 +181,18 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 				the_category();
 				?>
 			</div>
-		<?php endif; ?>
-		<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<?php endif; 
+
+		if ($section == 6 || $section == 7 ) : ?>
+			<div class = "left-right-countnews">
+				<p class="count-news"><?php echo esc_html($context_blog_count_post)?></p>
+				<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			</div>
+		<?php else : ?>
+			<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<?php endif;
 		
-		<?php context_blog_content_core_meta( $meta, $date, $comment ); 
+		context_blog_content_core_meta( $meta, $date, $comment ); 
 		if ( $excerpt == 1 ) :
 			context_blog_word_limit( $context_blog_word_limit );
 		endif;

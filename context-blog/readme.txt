@@ -31,6 +31,11 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+.. is added in post title of main news
+
+= 1.2.0 June 12 2025
+tested up to 6.8
+
 = 1.1.9 april 9 2025
 tested up to 6.7.2. some changes for new newsmag context blog.
 
