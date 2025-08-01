@@ -53,6 +53,8 @@ function context_blog_setup() {
 	add_image_size( 'context-blog-main-blog-1-1200X630', 1200, 630, array( 'center', 'top' ) );
 	add_image_size( 'context-blog-main-blog-2-538X382', 538, 382, array( 'center', 'top' ) );
 	add_image_size( 'context-blog-aboutme-350X350', 350, 350, array( 'center', 'top' ) );
+	add_image_size( 'context-blog-center-image-785X485', 785, 485, array( 'center', 'top' ) );
+	add_image_size( 'context-blog-sticky-image-576X307', 576, 307, array( 'center', 'top' ) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(

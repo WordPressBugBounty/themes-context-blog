@@ -427,6 +427,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Lenis
     const lenis = new Lenis({
+        smooth: true,
+        lerp: 0.05, // Moderate lerp intensity
     });
 
     function raf(time) {
@@ -438,4 +440,3 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 // end
-//# sourceMappingURL=lenis.min.js.map

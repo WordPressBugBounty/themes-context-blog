@@ -31,10 +31,19 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
-.. is added in post title of main news
+= 1.2.1 july 30  2025
+arrow button of card seciton in tab view shifted upward. 
+image of gallary section width made auto in mobile view. header image ans sitelte zoom scal made same.
+.map comment source removed.
+font-size of H tag changed. 
+Sidebar post title font size add seperatly, H2 tag added in css of section title.
+thumbnail for footer changed to default size.
+new image side for sticky slider created.
+aspect ratio for masionary, main blog and related post added, card slider img added.
 
 = 1.2.0 June 12 2025
 tested up to 6.8
+.. is added in post title of main news
 
 = 1.1.9 april 9 2025
 tested up to 6.7.2. some changes for new newsmag context blog.

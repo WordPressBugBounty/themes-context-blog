@@ -306,14 +306,14 @@ jQuery(document).ready(
                 if (isElementInViewport(targetclass2)) {
 
                     const scrollPosition2 = window.scrollY;
-                    jQuery(".banner-author-info ").css({ "transform": 'scale(' + (1 - (scrollPosition2 * 0.0007)) + ',' + (1 - (scrollPosition2 * 0.0007)) + ') translateY(-35%)'});
+                    jQuery(".banner-author-info ").css({ "transform": 'scale(' + (1 - (scrollPosition2 * 0.0009)) + ',' + (1 - (scrollPosition2 * 0.0009)) + ') translateY(-35%)'});
 
                 }
             }
             if (targetclass3.length > 0) {
                 if (isElementInViewport(targetclass3)) {
                     const scrollPosition3 = window.scrollY;
-                    jQuery(".custom-header").css({ "transform": 'scale(' + (1 + (scrollPosition3 * 0.0004)) + ',' + (1 + (scrollPosition3 * 0.0004)) + ')' });
+                    jQuery(".custom-header").css({ "transform": 'scale(' + (1 + (scrollPosition3 * 0.0009)) + ',' + (1 + (scrollPosition3 * 0.0009)) + ')' });
 
                 }
             }

@@ -4,7 +4,7 @@ Theme URI: https://www.postmagthemes.com/downloads/context-blog-free-wordpress-t
 Author: postmagthemes.com
 Author URI: https://postmagthemes.com/
 Description: Context blog WordPress theme is a free, personalized, and context-oriented theme. It starts by focusing on your persona, followed by other attractions. The other six attractions show your post in a different design. Your main blog post is one of them. The convincing feature is a selection of blog posts that you can use to highlight your post in different sections. Post selection is based on different contexts, such as the number of comments, date, category. The theme is completely configurable and accessible from the customizer's preview. Additionally, the theme is fully responsive and mobile-friendly, ensuring that your content looks great on any device.  Its HTML5 structure with sections and articles ensures optimal SEO performance. In summary, the Context blog WordPress theme is a customizer based, versatile, and SEO-friendly option for bloggers looking to enhance their online presence and improve their search engine rankings. Demo is here https://contextblog.postmagthemes.com
-Version: 1.2.0
+Version: 1.2.1
 Requires at least: 4.5
 Tested up to: 6.7.2
 Requires PHP: 5.6
@@ -419,6 +419,35 @@ h5,
 h6 {
     clear: both;
     word-break: break-word;
+}
+h1,
+.h1 {
+  font-size: 32px;
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+}
+
+h3,
+.h3 {
+  font-size: 19px;
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+h6,
+.h6 {
+  font-size: 13px;
 }
 
 p {
@@ -1158,12 +1187,11 @@ footer .blog-content.yes_image {
 
 /* main blog image dimension maintain */
 
-.home-section .col-lg-8.main-blog-body img,
-.archive .col-lg-8.main-blog-body img,
-.search .col-lg-8.main-blog-body img {
-    object-fit: cover;
-    max-height: 383px;
-    width: 100%;
+.home-section .single-blog .main-blog-snippet img,
+.archive .single-blog .main-blog-snippet img,
+.search .single-blog .main-blog-snippet img {
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
 }
 
 .home-section .col-lg-8.main-blog-body a.img-holder,
@@ -1171,10 +1199,32 @@ footer .blog-content.yes_image {
 .search .col-lg-8.main-blog-body a.img-holder {
   width: 100%;
 }
+
+.masionary-view {
+    column-count: 2;
+    grid-gap: 30px;
+
+}
+.home-section .single-blog .masionary-view .main-blog-snippet img,
+.archive .single-blog .masionary-view .main-blog-snippet img,
+.search .single-blog .masionary-view .main-blog-snippet img,
+.masionary-view .main-blog-snippet img{
+  aspect-ratio: 538 / 382;
+  object-fit: cover;
+  width: 100%;
+}
+.masionary-view>.blog-snippet {
+    vertical-align: top;
+    break-inside: avoid;
+    margin: 0 0 30px;
+}
+
 /* card slider */
 .home-section.thumb-blog img {
     height: 245px;
     object-fit: cover;
+    width: 100%;
+    aspect-ratio: 382/271;
 }
 
 /* gallery slider */
@@ -2377,7 +2427,7 @@ ul.extra-info {
 
 .thumb-blog .slick-arrow {
     top: auto;
-    bottom: -100px;
+    bottom: -85px;
 }
 
 .thumb-blog .slick-prev {
@@ -2647,18 +2697,6 @@ ul.extra-info {
     grid-gap: 30px;
 }
 
-.masionary-view {
-    column-count: 2;
-    grid-gap: 30px;
-
-}
-
-.masionary-view>.blog-snippet {
-    vertical-align: top;
-    break-inside: avoid;
-    margin: 0 0 30px;
-}
-
 /*end grid view*/
 
 
@@ -2708,7 +2746,8 @@ aside {
 
 .home-section h3.title,
 .archive h3.title,
-.search h3.title {
+.search h3.title,
+.sidebar h3.title {
     font-size: 24px;
 }
 
@@ -3513,8 +3552,8 @@ html {
 /* End of Media css */
 
 
-.home-section .about-author-title,
-.home-section .main-title {
+.home-section h2.about-author-title,
+.home-section h2.main-title {
     font-size: 32px;
     line-height: 1.4;
     letter-spacing: 1px;

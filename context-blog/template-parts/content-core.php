@@ -72,7 +72,7 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 			if ( has_post_thumbnail() ) :
 				?>
 				<a href="<?php the_permalink(); ?>" class="img-holder" aria-label='<?php the_title(); ?>'>
-					<?php the_post_thumbnail(); ?>
+					<?php the_post_thumbnail('context-blog-center-image-785X485'); ?>
 				</a>
 				<?php
 			endif;
@@ -109,7 +109,7 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 			if ( has_post_thumbnail() ) :
 				?>
 				<a href="<?php the_permalink(); ?>" class="img-holder" aria-label='<?php the_title(); ?>'>
-					<?php the_post_thumbnail( 'context-blog-gallery-slider-2-footer-news-100X98' ); ?>                    
+					<?php the_post_thumbnail( 'thumbnail' ); ?>                    
 				</a>
 				<?php
 			endif;
@@ -134,7 +134,7 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 			if ( has_post_thumbnail() ) :
 				?>
 				<a href="<?php the_permalink(); ?>" class="img-holder" aria-label='<?php the_title(); ?>'>
-					<?php the_post_thumbnail( ); ?>
+					<?php the_post_thumbnail('context-blog-sticky-image-576X307'); ?>
 				</a>
 				<?php
 			endif;

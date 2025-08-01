@@ -1111,6 +1111,9 @@
     #main-menu li.far {
         color: black;
     }
+    .list-view .blog-snippet.md .img-holder {
+        width: auto;
+    }
 }
 
 /* End of Media css */
