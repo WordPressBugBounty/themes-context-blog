@@ -62,9 +62,11 @@ function context_blog_content_core( $section, $category, $meta, $date, $comment,
 			$context_blog_word_limit = get_theme_mod( 'context_blog_centernews_excerpt_limit', 22 );
 			if ( has_post_thumbnail() ) :
 				?>
-				<a href="<?php the_permalink(); ?>" class="img-holder" aria-label='<?php the_title(); ?>'>
-					<?php the_post_thumbnail('context-blog-center-image-785X485'); ?>
-				</a>
+				<div class = "wrapper_centernews">
+					<a href="<?php the_permalink(); ?>" class="img-holder" aria-label='<?php the_title(); ?>'>
+						<?php the_post_thumbnail('context-blog-center-image-785X485'); ?>
+					</a>
+				</div>
 				<?php
 			endif;
 		elseif ( $section == 10 ) :

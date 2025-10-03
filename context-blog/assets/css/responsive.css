@@ -45,7 +45,7 @@
         content: "\f107";
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        right: 3px;
+        right: 3%;
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
@@ -113,13 +113,16 @@
 
 @media (max-width: 991px) {
 
+    .main-blog .related-post-mainblog .blog-content h3.title a  {
+        font-size: 14px;
+    }
     .main-blog-holder .main-blog-body .blog-snippet, 
     .archive .main-blog-body .blog-snippet, 
     .search .main-blog-body .blog-snippet {
         margin: 0 0 25px;
     }
     .home-section h2.about-author-title, .home-section h2.main-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .extra-info, .social-share {
         font-size: 13px;
@@ -291,7 +294,7 @@
     }
 
     .main-title {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
     }
 
     .full-blog .slick-arrow {
@@ -522,11 +525,8 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
-    .home-section h2.about-author-title, .home-section h2.main-title {
-        font-size: 1.9rem;
-    }
     .extra-info, .social-share {
         font-size: 13px;
     }
@@ -536,6 +536,13 @@
     body .detail-page-body, .home-section p,
     .sidebar-block  {
         font-size: 1rem !important;
+    }
+    #main-news .left-news-slider-block h3.title a, 
+    #main-news .right-news-slider-block h3.title a, 
+    .grid-column-blog h3.title a,
+    footer .footer-news h3.title a, 
+    .home-section .blog-slider-thmb h3.title a {
+        font-size: 1.15rem;
     }
     h3.title a, .detail-page-body h3.comment-reply-title {
         font-size: 1.3rem;
@@ -751,7 +758,7 @@
     }
 
     .home-section h2.about-author-title, .home-section h2.main-title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .extra-info, .social-share {
         font-size: 12px;
@@ -761,10 +768,17 @@
     .category-tag li > a,
     body .detail-page-body, .home-section p,
     .sidebar-block  {
-        font-size: 0.8rem !important;
+        font-size: 0.9rem !important;
+    }
+    #main-news .left-news-slider-block h3.title a, 
+    #main-news .right-news-slider-block h3.title a, 
+    .grid-column-blog h3.title a,
+    footer .footer-news h3.title a, 
+    .home-section .blog-slider-thmb h3.title a {
+        font-size: 1.05rem;
     }
     h3.title a, .detail-page-body h3.comment-reply-title {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .detail-page-body h2.comments-title {
         font-size: 1.05rem;   

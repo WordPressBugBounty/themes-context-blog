@@ -4,7 +4,7 @@ Theme URI: https://www.postmagthemes.com/downloads/context-blog-free-wordpress-t
 Author: postmagthemes.com
 Author URI: https://postmagthemes.com/
 Description: Context blog WordPress theme is a free, personalized, and context-oriented theme. It starts by focusing on your persona, followed by other attractions. The other six attractions show your post in a different design. Your main blog post is one of them. The convincing feature is a selection of blog posts that you can use to highlight your post in different sections. Post selection is based on different contexts, such as the number of comments, date, category. The theme is completely configurable and accessible from the customizer's preview. Additionally, the theme is fully responsive and mobile-friendly, ensuring that your content looks great on any device.  Its HTML5 structure with sections and articles ensures optimal SEO performance. In summary, the Context blog WordPress theme is a customizer based, versatile, and SEO-friendly option for bloggers looking to enhance their online presence and improve their search engine rankings. Demo is here https://contextblog.postmagthemes.com
-Version: 1.2.1
+Version: 1.2.3
 Requires at least: 4.5
 Tested up to: 6.7.2
 Requires PHP: 5.6
@@ -560,7 +560,6 @@ input[type="submit"] {
     border-radius: 3px;
     background: #e6e6e6;
     color: rgba(0, 0, 0, 0.8);
-    line-height: 1;
     padding: 0.6em 1em 0.4em;
 }
 
@@ -1566,6 +1565,9 @@ p.site-title a {
     z-index: 0;
     color: #fff;
 }
+#main-menu > li > a.nav-link {
+    padding-left: 15px;
+}
 
 #main-menu li a.nav-link.has-submenu,
 #side-menu li a.nav-link.has-submenu {
@@ -2427,7 +2429,7 @@ ul.extra-info {
 
 .thumb-blog .slick-arrow {
     top: auto;
-    bottom: -85px;
+    bottom: -60px;
 }
 
 .thumb-blog .slick-prev {
@@ -2477,7 +2479,8 @@ ul.extra-info {
 
 .full-blog .slick-arrow {
     top: auto;
-    bottom: 0;
+    bottom: 20px;
+
 }
 
 .full-blog .slick-prev {
@@ -2977,9 +2980,6 @@ aside {
     padding: 10px 0;
 }
 
-.detail-page .detail-page-body {
-    padding-top: 15px;
-}
 .detail-author-block {
     margin: 70px 0 70px 0;
 }
@@ -3580,3 +3580,59 @@ overflow: hidden;
 pointer-events: none;
 }
   /* end */
+
+/* added later */
+.site-navigation .container {
+padding: 0;
+}
+
+.single-post .detail-holder .content h2,
+.single-post .detail-holder .content h3,
+.single-post .detail-holder .content h4,
+.single-post .detail-holder .content h5,
+.single-post .detail-holder .content h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* animation fade made with js */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+.fade-up {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.fade-in-delay-1 { transition-delay: 0.2s; }
+.fade-in-delay-2 { transition-delay: 0.4s; }
+.fade-in-delay-3 { transition-delay: 0.6s; }
+.fade-in-delay-4 { transition-delay: 0.8s; }
+
+.fade-left {
+    opacity: 0;
+    -webkit-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fade-left.visible {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

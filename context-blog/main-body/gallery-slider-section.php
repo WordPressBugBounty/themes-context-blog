@@ -21,7 +21,7 @@ function context_blog_home_gallery_slider_enable() {
 			<?php endif; ?>
 				<div class="row">
 					<div class="col-lg-8">
-						<div class="blog-slider-main" data-aos="fade-left">
+						<div class="blog-slider-main fade-left">
 							<?php
 							$args['posts_per_page']      = absint( get_theme_mod( 'context_blog_gallery_slider_number_of_display',4 ) );
 							$args['ignore_sticky_posts'] = 1;
@@ -46,7 +46,7 @@ function context_blog_home_gallery_slider_enable() {
 					</div>
 
 					<div class="col-lg-4">
-						<div class="blog-slider-thmb" data-aos="fade-up">
+						<div class="blog-slider-thmb fade-up">
 							<?php
 							$args['posts_per_page']      = absint( get_theme_mod( 'context_blog_gallery_slider_number_of_display', 4 ) );
 							$args['ignore_sticky_posts'] = 1;

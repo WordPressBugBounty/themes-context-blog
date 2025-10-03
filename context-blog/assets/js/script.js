@@ -328,16 +328,29 @@ jQuery(document).ready(
         onScroll();
         // End 
         // change color
-
-        // Animaton on scroll init
-
-        AOS.init({
-            offset: 100,
-            duration: 700,
-            easing: 'ease-in',
-            mirror: true
-        }
-        );
+        
+        // show fade animation upon scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                } else {
+                entry.target.classList.remove('visible'); // Optional
+                }
+            });
+            }, {
+            threshold: 0.05
+            });
+            
+            document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+            });
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+            document.querySelectorAll('.fade-left').forEach(el => {
+                observer.observe(el);
+            });
 
         // hover on insta-video-hover
         jQuery('.insta-video-hover').hover(function toggleControls() {

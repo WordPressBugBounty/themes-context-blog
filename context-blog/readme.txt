@@ -31,6 +31,17 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+= 1.2.2 Oct 3 2025
+load text domain is delayed.
+
+= 1.2.2 Oct 3 2025
+mobile view post title size reduced. warraper div added for main center news.
+responsive for tab changed. space added below interoduction, mobile view font-size increase, image of advertise at header added in customizer.
+detail page H tags font-family made roboto.
+Function with different priority made for responsive, index and styles.
+AOS is replaced.
+
+
 = 1.2.1 july 30  2025
 arrow button of card seciton in tab view shifted upward. 
 image of gallary section width made auto in mobile view. header image ans sitelte zoom scal made same.

@@ -20,12 +20,12 @@ function context_blog_color_font_css() {
 	$context_blog_paragraph_font_family   = 'Roboto';
 
 	if ( $header_image_enable_homepage == 0 and $show_on_front == 'page' ) :
-		$introduction_margin_homepage = '0px auto 0px auto';
+		$introduction_margin_homepage = '-50px auto 0px auto';
 	elseif ( $header_image_enable_homepage == 0 and $show_on_front == 'posts' ) :
-		$introduction_margin_blog = '0px auto 0px auto';
+		$introduction_margin_blog = '-50px auto 0px auto';
 	endif;
 	if ( $header_image_enable_blogpage == 0 and $show_on_front == 'page' ) :
-		$introduction_margin_blog = '0px auto 0px auto';
+		$introduction_margin_blog = '-50px auto 0px auto';
 	endif;
 
 	if ( has_header_image() ) :
@@ -145,6 +145,7 @@ function context_blog_color_font_css() {
 			.left-float-post,
 			.right-float-post,
 			#masthead,
+			#main-news .container,
 			.left-news-slider-blog,
 			.right-news-slider-blog,
 			.center-news-slider-blog
