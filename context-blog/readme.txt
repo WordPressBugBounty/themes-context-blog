@@ -4,7 +4,7 @@ Contributors: postmagthemes
 Tags: blog, entertainment, one-column, two-columns, left-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, theme-options, threaded-comments
 
 Requires at least: 4.5
-Tested up to: 6.7.2
+Tested up to: 6.9
 Stable tag: 1.0.0
 Requires PHP: 5.6
 
@@ -31,7 +31,31 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
-= 1.2.2 Oct 3 2025
+= 1.3.1  jan 19 2026
+* live preview in iphone is not showing of wordpress.org thus add line 21 in script.js, animated giff added.
+
+= 1.3.0  dec 23 2025
+* box-size made with initial to solve box issue in edit mode, unnessary init removed for loading text domain.
+
+= 1.2.9  dec 14 2025
+* background color for count news fixed for newsmag
+
+= 1.2.8  dec 5 2025
+* height bug fixed in gallery slider for category, extra category replaced get_theme_mod shifted to child theme
+
+= 1.2.7 nov 17 2025
+* menu nav-link class bug fixed.
+
+= 1.2.6 nov 13 2025
+* security issue on modal popup guest has been fixed.
+
+= 1.2.5 nov 4 2025
+* updated for max grid section, margin of post tile reduced 
+
+= 1.2.4 Oct 10 2025
+editor style loaded with new h tag size.
+
+= 1.2.3 Oct 3 2025
 load text domain is delayed.
 
 = 1.2.2 Oct 3 2025
@@ -183,11 +207,6 @@ License under https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
 By (C) 2018 Vasil Dinkov, http://smartmenus.org
 License under https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
 
-* aos.css
-By (C) 2018 Michał Sajnóg, https://github.com/michalsnik
-License under https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
-
-
 
 # Js 
 
@@ -213,10 +232,6 @@ License under  http://github.com/kenwheeler/slick/issues
 
 * jquery.slicknav.js
 By (C) 2018 Vasil Dinkov, http://smartmenus.org
-License under https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
-
-* aos.js
-By (C) 2018 Michał Sajnóg, https://github.com/michalsnik
 License under https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT
 
 * lenis.js

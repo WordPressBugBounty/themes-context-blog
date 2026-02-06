@@ -111,8 +111,11 @@ function context_blog_color_font_css() {
 			.pagination li:hover a,
 			.pagination .page-numbers.current,
 			.pagination .page-numbers:hover,
-			.messenger-container .btn  {
-				background: ' . esc_attr( $primary_theme_color ) . ' !important ;
+			.messenger-container .btn,
+			.left-news-slider-block .count-news, 
+			.right-news-slider-block .count-news
+			{
+				background-color: ' . esc_attr( $primary_theme_color ) . ' !important ;
 			}
 			.btn-outline-primary:hover,
 			.social-links.bordered li a:hover,

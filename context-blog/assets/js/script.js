@@ -18,8 +18,9 @@ jQuery(document).ready(
 
         function setupResponsiveMenu(e) {
             if (window.innerWidth < 992) {
-                document.querySelector("#main-menu > li:last-of-type").addEventListener("keydown", handleTabPress);
-
+                if (document.querySelector("#main-menu > li:last-of-type") != null) {
+                    document.querySelector("#main-menu > li:last-of-type").addEventListener("keydown", handleTabPress);
+                }
             } else {
                 if (document.querySelector("#main-menu > li:last-of-type") != null) {
                     document.querySelector("#main-menu > li:last-of-type").removeEventListener("keydown", handleTabPress);
@@ -306,7 +307,7 @@ jQuery(document).ready(
                 if (isElementInViewport(targetclass2)) {
 
                     const scrollPosition2 = window.scrollY;
-                    jQuery(".banner-author-info ").css({ "transform": 'scale(' + (1 - (scrollPosition2 * 0.0009)) + ',' + (1 - (scrollPosition2 * 0.0009)) + ') translateY(-35%)'});
+                    jQuery(".banner-author-info ").css({ "transform": 'scale(' + (1 - (scrollPosition2 * 0.0009)) + ',' + (1 - (scrollPosition2 * 0.0009)) + ') translateY(-35%)' });
 
                 }
             }
@@ -328,29 +329,29 @@ jQuery(document).ready(
         onScroll();
         // End 
         // change color
-        
+
         // show fade animation upon scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                    entry.target.classList.add('visible');
                 } else {
-                entry.target.classList.remove('visible'); // Optional
+                    entry.target.classList.remove('visible'); // Optional
                 }
             });
-            }, {
+        }, {
             threshold: 0.05
-            });
-            
-            document.querySelectorAll('.fade-in').forEach(el => {
+        });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
-            });
-            document.querySelectorAll('.fade-up').forEach(el => {
-                observer.observe(el);
-            });
-            document.querySelectorAll('.fade-left').forEach(el => {
-                observer.observe(el);
-            });
+        });
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+        document.querySelectorAll('.fade-left').forEach(el => {
+            observer.observe(el);
+        });
 
         // hover on insta-video-hover
         jQuery('.insta-video-hover').hover(function toggleControls() {
@@ -385,6 +386,7 @@ jQuery(document).ready(
             });
         });
         jQuery('ul.sub-menu a').removeClass('nav-link');
+
     }
 );
 

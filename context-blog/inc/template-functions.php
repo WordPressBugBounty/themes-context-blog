@@ -219,16 +219,6 @@ function context_blog_video_controls( $settings ) {
 }
 add_filter( 'header_video_settings', 'context_blog_video_controls' );
 
-function context_blog_editor_styles() {
-	$classic_editor_styles = array(
-		'/assets/css/editor-style.css',
-	);
-
-	add_editor_style( $classic_editor_styles );
-}
-
-add_action( 'init', 'context_blog_editor_styles' );
-
 /**
  * Here we are displaying the header video in all pages:
  */

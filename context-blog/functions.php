@@ -54,7 +54,6 @@ function context_blog_setup() {
 	add_image_size( 'context-blog-main-blog-2-538X382', 538, 382, array( 'center', 'top' ) );
 	add_image_size( 'context-blog-aboutme-350X350', 350, 350, array( 'center', 'top' ) );
 	add_image_size( 'context-blog-center-image-785X485', 785, 485, array( 'center', 'top' ) );
-	add_image_size( 'context-blog-sticky-image-576X307', 576, 307, array( 'center', 'top' ) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
@@ -118,6 +117,13 @@ function context_blog_setup() {
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'responsive-embeds' );
+
+	$classic_editor_styles = array(
+		'/assets/css/editor-style.css',
+	);
+
+	add_editor_style( $classic_editor_styles );
+
 
 }
 add_action( 'after_setup_theme', 'context_blog_setup' );
@@ -294,29 +300,29 @@ require get_template_directory() . '/inc/custom-header.php';
  * Load template files at init hook to prevent early translation loading.
  * This ensures translations are loaded before template files are processed.
  */
+require get_template_directory() . '/inc/template-tags.php';
+
 function context_blog_load_template_files() {
-	require get_template_directory() . '/inc/template-tags.php';
 	require get_template_directory() . '/inc/template-functions.php';
-	require get_template_directory() . '/template-parts/content-core-meta.php';
-	require get_template_directory() . '/template-parts/content-core.php';
+	
 }
 add_action( 'init', 'context_blog_load_template_files' );
+
+require get_template_directory() . '/template-parts/content-core-meta.php';
+require get_template_directory() . '/template-parts/content-core.php';
+
 /**
  * Load customizer files at init hook to prevent early translation loading.
  * This ensures translations are loaded before customizer files are processed.
  */
-function context_blog_load_customizer() {
-	require get_template_directory() . '/inc/customizer.php';
-}
-add_action( 'init', 'context_blog_load_customizer' );
+require get_template_directory() . '/inc/customizer.php';
+
 
 /**
  * Load breadcrumbs at init hook to prevent early translation loading.
  */
-function context_blog_load_breadcrumbs() {
-	require_once get_template_directory() . '/inc/breadcrumbs.php';
-}
-add_action( 'init', 'context_blog_load_breadcrumbs' );
+
+require_once get_template_directory() . '/inc/breadcrumbs.php';
 
 /**
 * upgrade to pro
@@ -347,12 +353,10 @@ function context_blog_catname_replaced() {
 	$customizer_setting4 = 'context_blog_sidebar_fullwidth_category_name';
 	$customizer_setting5 = 'context_blog_footer_news1_category_name';
 	$customizer_setting6 = 'context_blog_footer_news2_category_name';
-	$customizer_setting7 = 'context_blog_grid_column_category_name';
-	$customizer_setting8 = 'context_blog_sticky_slide_category_name';
 
-	$customizer_settings = array($customizer_setting1,$customizer_setting2,$customizer_setting3,$customizer_setting4,$customizer_setting5,$customizer_setting6,$customizer_setting7,$customizer_setting8);
+	$customizer_settings = array($customizer_setting1,$customizer_setting2,$customizer_setting3,$customizer_setting4,$customizer_setting5,$customizer_setting6);
 
-	for ($a = 0; $a < 8; $a++) {
+	for ($a = 0; $a < 6; $a++) {
 		if (  ! is_numeric( get_theme_mod($customizer_settings[$a],0) ) ) {
 			$categories = get_categories();
 			$value_to_check = get_theme_mod( $customizer_settings[$a],0 );
