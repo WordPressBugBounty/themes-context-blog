@@ -31,6 +31,10 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+= 1.3.2 - march 2 2026  =
+update wordcount. content core fill added with extra parameter.
+li.wp-block-post css added.
+
 = 1.3.1  jan 19 2026
 * live preview in iphone is not showing of wordpress.org thus add line 21 in script.js, animated giff added.
 
