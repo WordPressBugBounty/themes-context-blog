@@ -31,6 +31,9 @@ context-blog includes support for WooCommerce.
 
 == Changelog ==
 
+= 1.3.3 - march 8 2026  =
+footer word count customizer bug fixed, single page detail wordcount bug fixed
+
 = 1.3.2 - march 2 2026  =
 update wordcount. content core fill added with extra parameter.
 li.wp-block-post css added.

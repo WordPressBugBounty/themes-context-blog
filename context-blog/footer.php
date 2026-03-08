@@ -83,7 +83,7 @@
 								$show_meta      = get_theme_mod( 'context_blog_footer_news2' . __( 'meta', 'context-blog' ), 1 );
 								$show_date      = get_theme_mod( 'context_blog_footer_news2_' . __( 'date', 'context-blog' ), 0 );
 								$show_comment   = get_theme_mod( 'context_blog_footer_news2_' . __( 'comment', 'context-blog' ), 1 );
-								$show_wordcount = get_theme_mod( 'context_blog_footer_news1_' . __( 'word', 'context-blog' ), 1 );
+								$show_wordcount = get_theme_mod( 'context_blog_footer_news2_' . __( 'word', 'context-blog' ), 1 );
 								$show_excerpt   = 0;
 								$show_readmore  = 0;
 								$show_modal     = 0;
