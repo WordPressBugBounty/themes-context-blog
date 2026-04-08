@@ -30,6 +30,8 @@ Description: Context blog WordPress theme is a free, personalized, and context-o
 context-blog includes support for WooCommerce.
 
 == Changelog ==
+= 1.3.4 - April 8 2026  =
+* scroll for video header is disabled
 
 = 1.3.3 - march 8 2026  =
 footer word count customizer bug fixed, single page detail wordcount bug fixed

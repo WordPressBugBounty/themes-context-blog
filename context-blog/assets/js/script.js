@@ -314,7 +314,7 @@ jQuery(document).ready(
             if (targetclass3.length > 0) {
                 if (isElementInViewport(targetclass3)) {
                     const scrollPosition3 = window.scrollY;
-                    jQuery(".custom-header").css({ "transform": 'scale(' + (1 + (scrollPosition3 * 0.0009)) + ',' + (1 + (scrollPosition3 * 0.0009)) + ')' });
+                    jQuery(".custom-header.no-video").css({ "transform": 'scale(' + (1 + (scrollPosition3 * 0.0009)) + ',' + (1 + (scrollPosition3 * 0.0009)) + ')' });
 
                 }
             }
