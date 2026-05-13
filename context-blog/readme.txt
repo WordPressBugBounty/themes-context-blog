@@ -30,6 +30,11 @@ Description: Context blog WordPress theme is a free, personalized, and context-o
 context-blog includes support for WooCommerce.
 
 == Changelog ==
+
+= 1.3.5 - may 12 2026  =
+* customizer label css changed for blink header, fade-up css modified,
+card slider post title height maintain, blink settting applied
+
 = 1.3.4 - April 8 2026  =
 * scroll for video header is disabled
 
